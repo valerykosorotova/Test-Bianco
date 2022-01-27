@@ -11,20 +11,7 @@
     font-display: swap;
 }
 
-$font_main: 'Tenor Sans';
-$font_waight_main: 400;
-
-$font_size_header: 16px;
-$font_size_main: 13px;
-$font_size_footer: 15px;
-
-$line_height_header: 18px;
-$ine_height_main: 29px;
-$ine_height_footer: 25px;
-
-$color_main: #1A1918;
-$color_secondary: #FFFFFF;
-$color_background: #515151;
+@import "_variables";
 
 body{
     box-sizing: border-box;
@@ -36,6 +23,7 @@ body{
     margin-right: auto;
     padding: 0 20px;
 }
+
 .page-wraper{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,16 +34,9 @@ body{
     grid-column-end: 3;
     grid-template-columns: 1fr 1fr;
 }
-.header{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    background-color: rebeccapurple;
-}
-// .banner{
-//     grid-column-start: 1;
-//     grid-column-end: 3;
-//     background-color: red;
-// }
+
+@import "_header";
+
 .aside{
     grid-column-start: 1;
     grid-column-end: 2;

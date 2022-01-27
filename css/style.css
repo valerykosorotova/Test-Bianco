@@ -29,10 +29,91 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-.header {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  background-color: rebeccapurple;
+.header__subheader {
+  display: flex;
+  padding: 10px 0;
+}
+.header__subheader-wraper {
+  width: 100%;
+  background-color: #515151;
+}
+.header__language-link {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.header__language-link:hover {
+  color: #CBC8C9;
+}
+.header__text {
+  color: #FFFFFF;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header__title {
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__main {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu-list {
+  display: flex;
+}
+.header__menu-item {
+  margin-right: 15px;
+}
+.header__menu-item:last-child {
+  margin-right: 0px;
+}
+.header__navigation {
+  display: flex;
+  padding: 15px 0;
+  border-top: 1px solid #CBC8C9;
+  border-bottom: 1px solid #CBC8C9;
+  justify-content: center;
+}
+.header__navigation-list {
+  display: flex;
+}
+.header__navigation-item {
+  margin-right: 50px;
+}
+.header__navigation-item:last-child {
+  margin-right: 0px;
+}
+.header__navigation-item-link {
+  color: #1A1918;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.banner {
+  margin-top: 5px;
+  position: relative;
+}
+.banner__image {
+  width: 100%;
+}
+.banner__figcaption {
+  position: absolute;
+  color: #FFFFFF;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-size: 37px;
+  text-transform: uppercase;
+  left: 35px;
+  bottom: 35px;
+}
+
+.aside {
+  padding-top: 95px;
 }
 
 .aside {

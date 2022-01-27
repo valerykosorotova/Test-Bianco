@@ -9,68 +9,78 @@
     <title>BIANCO</title>
 </head>
 <body>
-    <div class="page-wraper">
+    <!-- <div class="page-wraper"> -->
         <header class="header">
-            <div class="container">
-                <div class="header__subheader">
-                    <div class="header__language">language</div>
-                    <h3 class="header__title">Free Delivery in DK</h3>
-                </div>
-                <div class="header__main">
-                    <img src="./images/main-logo.svg" alt="Bianco Logo" class="header__logo">
-                    <div class="header__menu-wrap">
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-item-link">
-                                    <img src="./images/search-icon.svg" alt="Search icon" class="header__menu-item-icon">
-                                </a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-item-link">
-                                    <img src="./images/favorites-icon.svg" alt="Favorites icon" class="header__menu-item-icon">
-                                </a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-item-link">
-                                    <img src="./images/account-icon.svg" alt="Account icon" class="header__menu-item-icon">
-                                </a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-item-link">
-                                    <img src="./images/cart-icon.svg" alt="Cart icon" class="header__menu-item-icon">
-                                </a>
-                            </li>
-                        </ul>
+            <div class="header__subheader-wraper">
+                <div class="container">
+                    <div class="header__subheader">
+                        <div class="header__language">
+                            <a href="" class="header__text header__language-link">language</a>
+                        </div>
+                        <h3 class="header__text header__title">Free Delivery in DK</h3>
                     </div>
-                    <nav class="header__navigation">
-                        <ul class="header__navigation-list">
-                            <li class="header__navigation-item">
-                                <a href="#" class="header__navigation-item-link">Women</a>
-                            </li>
-                            <li class="header__navigation-item">
-                                <a href="#" class="header__navigation-item-link">men</a>
-                            </li>
-                            <li class="header__navigation-item">
-                                <a href="#" class="header__navigation-item-link">Lookbook</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <figure class="banner">    
-                        <picture class="banner__picture">
-                            <source
-                            srcset="./images/banner.webp 1x, ./images/banner@2x.webp 2x">
-                            <img src="./images/banner.jpg" alt="Main banner" class="banner__image">
-                        </picture>
-                        <figcaption class="banner__figcaption">Stock collection</figcaption>
-                    </figure>
+                </div>
+            </div>  
+            <div class="header__main-wrap">
+                <div class="container">
+                     <div class="header__main">
+                        <img src="./images/main-logo.svg" alt="Bianco Logo" class="header__logo">
+                        <div class="header__menu-wrap">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-item-link">
+                                        <img src="./images/search-icon.svg" alt="Search icon" class="header__menu-item-icon">
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-item-link">
+                                        <img src="./images/favorites-icon.svg" alt="Favorites icon" class="header__menu-item-icon">
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-item-link">
+                                        <img src="./images/account-icon.svg" alt="Account icon" class="header__menu-item-icon">
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-item-link">
+                                        <img src="./images/cart-icon.svg" alt="Cart icon" class="header__menu-item-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <nav class="header__navigation">
+                <ul class="header__navigation-list">
+                    <li class="header__navigation-item"> 
+                        <a href="#" class="header__navigation-item-link">Women</a> 
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#" class="header__navigation-item-link">men</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#" class="header__navigation-item-link">Lookbook</a>
+                        </li>
+                    </ul>
+            </nav>
+            <figure class="banner">    
+                <picture class="banner__picture">
+                    <source
+                    srcset="./images/banner.webp 1x, ./images/banner@2x.webp 2x">
+                    <img src="./images/banner.jpg" alt="Main banner" class="banner__image">
+                </picture>
+                <figcaption class="banner__figcaption">Stock collection</figcaption>
+            </figure>
         </header>
+    <!-- </div> -->
         <main class="main-wraper">
             <aside class="aside">
                 <div class="container">
                     <div class="">
                         <div class="checkbox">
+                            <div class="checkbox-name">Gender</div>
                             <input class="checkbox-real" type="checkbox" name="gender" value="man">
                             <div class="checkbox-fake"></div>
                             <div class="checkbox-text">Man</div>
