@@ -1,8 +1,6 @@
 @import "_variables";
 
 .header{
-    // grid-column-start: 1;
-    // grid-column-end: 4;
     &__subheader{
         display: flex;
         padding: 10px 0;
@@ -37,6 +35,9 @@
         justify-content: space-between;
 
     }
+    &__logo{
+        max-width: 100px;
+    }
     &__menu{
         &-list{
             display: flex;
@@ -50,7 +51,7 @@
     }
     &__navigation{
         display: flex;
-        padding: 15px 0;
+        padding: 20px 0;
         border-top: 1px solid $color_borders;
         border-bottom: 1px solid $color_borders;;
         justify-content: center;
@@ -67,6 +68,7 @@
                 font-family: $font_main;
                 font-weight: $font_weight_main;
                 font-size: $font_size_header;
+                line-height: $line_height_header;
                 text-transform: uppercase;
                 text-decoration: none;
             }
@@ -89,7 +91,4 @@
         left: 35px;
         bottom: 35px;
     }
-}
-.aside{
-padding-top: 95px;
 }

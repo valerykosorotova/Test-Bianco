@@ -11,6 +11,11 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'font_figcaption';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+}
+
 @import "_variables";
 
 body{
@@ -24,15 +29,9 @@ body{
     padding: 0 20px;
 }
 
-.page-wraper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 .main-wraper{
     display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 200px auto;
 }
 
 @import "_header";
@@ -40,20 +39,75 @@ body{
 .aside{
     grid-column-start: 1;
     grid-column-end: 2;
-    background-color: khaki
 }
+@import "_aside";
+
 .main-content{
-    background-color: seagreen;
     grid-column-start: 2;
     grid-column-end: 3;
-&__icon{
-    width: 20px;
-    height: 20px;
-}
-}
+    display: flex;
+    flex-direction: column;
 
-.footer{
+}
+@import "_main-content";
+
+@import "_footer";
+
+@media (max-width: 769px){
+    .container{
+        max-width: 100%;
+    }
+    .main-wraper{
+        grid-template-columns: auto auto;
+    }
+    .header__subheader{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__title{
+        margin: 0px;
+    }
+    .header__language{
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+    .header__main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__logo{
+        margin-bottom: 10px;
+    }
+
+    .banner__figcaption{
+        left: 15px;
+        bottom: 15px;
+        font-size: $font_size_main;
+    }
+    .aside{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .checkbox-name{
+        margin-bottom: 10px;
+    }
+
+    .main-content{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-bottom: 50px;
+    }
+    .main-content__list{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        row-gap: 30px;
+    }
+    
+    .aside{
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: slateblue;
+    }
+    .footer__navigation-item{
+        margin-right: 15px;
+    }
 }

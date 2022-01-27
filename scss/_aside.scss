@@ -1,0 +1,41 @@
+@import "_variables";
+
+.aside{
+    padding-top: 65px;
+    }
+    .checkbox{
+        position: relative;
+        display: flex;
+        align-items: center;
+        &-name{
+            color: $color_main;
+            font-family: $font_main;
+            font-weight: $font_weight_main;
+            font-size: $font_size_main;
+            line-height: $line_height_main;
+        }
+        &-real{
+            position: absolute;
+            opacity: 0;
+            &:checked + .checkbox-fake{
+                width: 18px;
+                height: 18px;
+                background-color: $color_main;
+                border: 2px solid $color_secondary; 
+            }
+        }
+        &-fake{
+            width: 20px;
+            height: 20px;
+            border: 1px solid $color_borders;
+        }
+        &-text{
+            color: $color_main;
+            font-family: $font_main;
+            font-weight: $font_weight_main;
+            font-size: $font_size_main;
+            line-height: $line_height_main;
+            margin-left: 10px;
+        }
+    }
+    

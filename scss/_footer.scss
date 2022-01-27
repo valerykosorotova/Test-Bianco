@@ -1,0 +1,30 @@
+@import "_variables";
+
+.footer{
+    padding-top: 40px;
+    &__navigation{
+        &-link{
+            color: $color_main;
+            font-family: $font_main;
+            font-weight: $font_weight_main;
+            font-size: $font_size_footer;
+            line-height: $line_height_footer;
+            text-decoration: none;
+        }
+        &-list{
+         display: flex;
+        }
+        &-item{
+            width: 100px;
+            margin-right: 40px;
+        }
+    }
+    &__copyright{
+        margin-top: 20px;
+        color: $color_main;
+            font-family: $font_main;
+            font-weight: $font_weight_main;
+            font-size: $font_size_footer;
+            line-height: $line_height_footer;
+    }
+}
