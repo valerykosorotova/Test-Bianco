@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Tenor Sans";
+  src: url("../fonts/subset-TenorSans.eot");
+  src: url("../fonts/subset-TenorSans.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-TenorSans.woff2") format("woff2"), url("../fonts/subset-TenorSans.woff") format("woff"), url("../fonts/subset-TenorSans.ttf") format("truetype"), url("../fonts/subset-TenorSans.svg#TenorSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.page-wraper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-wraper {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: rebeccapurple;
+}
+
+.aside {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: khaki;
+}
+
+.main-content {
+  background-color: seagreen;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.main-content__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: slateblue;
+}
+
+/*# sourceMappingURL=style.css.map */

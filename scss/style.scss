@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Tenor Sans';
+    src: url('../fonts/subset-TenorSans.eot');
+    src: url('../fonts/subset-TenorSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-TenorSans.woff2') format('woff2'),
+        url('../fonts/subset-TenorSans.woff') format('woff'),
+        url('../fonts/subset-TenorSans.ttf') format('truetype'),
+        url('../fonts/subset-TenorSans.svg#TenorSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$font_main: 'Tenor Sans';
+$font_waight_main: 400;
+
+$font_size_header: 16px;
+$font_size_main: 13px;
+$font_size_footer: 15px;
+
+$line_height_header: 18px;
+$ine_height_main: 29px;
+$ine_height_footer: 25px;
+
+$color_main: #1A1918;
+$color_secondary: #FFFFFF;
+$color_background: #515151;
+
+body{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+.page-wraper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main-wraper{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-columns: 1fr 1fr;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rebeccapurple;
+}
+// .banner{
+//     grid-column-start: 1;
+//     grid-column-end: 3;
+//     background-color: red;
+// }
+.aside{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: khaki
+}
+.main-content{
+    background-color: seagreen;
+    grid-column-start: 2;
+    grid-column-end: 3;
+&__icon{
+    width: 20px;
+    height: 20px;
+}
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: slateblue;
+}
