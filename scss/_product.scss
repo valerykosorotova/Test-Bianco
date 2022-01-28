@@ -6,12 +6,14 @@
         justify-content: flex-start;
         padding: 20px 0;
         flex-wrap: wrap;
+        & li:after {
+            content: "/";
+          }
+        & li:last-child:after {
+            content: "";
+          }
         &__item{
             margin-right: 5px;
-            border-bottom: 1px solid $color_main;
-            &:last-child{
-                border: none;
-            }
             &-link{
             color: $color_main;
             font-family: $font_main;
@@ -19,12 +21,11 @@
             font-size: $font_size_main;
             line-height: $line_height_main;
             text-transform: uppercase;
-            text-decoration: none;
-            &:hover{
-                color: $color_links;
+                &:hover{
+                    color: $color_links;
+                }   
             }
-            }
-    }
+        }
     }
     &__wraper{
         display: grid;
