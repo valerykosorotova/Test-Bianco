@@ -21,7 +21,9 @@
 body{
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .container{
     max-width: 1420px;
     margin-left: auto;
@@ -111,5 +113,36 @@ body{
     }
     .footer__navigation-item{
         margin-right: 15px;
+    }
+    .product-path{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .product-path__item-link{
+        font-size: 12px;
+    }
+    .product__wraper{
+        grid-template-columns: auto-fill, 75px minmax(auto, 693px) auto;   
+        column-gap: 10px;
+    }
+
+    .product-card__wraper{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        align-items: flex-end;
+    }
+    .product-card__price{
+        width: 100%;
+        text-align: end;
+    }
+    .product-card-informatiom__link{
+        width: 100%;
+        text-align: end;
+    }
+    .product-mini__item{
+        margin-bottom: 5px;
+    }
+    .grid__wraper{
+        margin: 30px 0 20px 0;
     }
 }

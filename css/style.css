@@ -14,6 +14,10 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1420px;
   margin-left: auto;
@@ -93,6 +97,9 @@ body {
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
+}
+.header__navigation-item-link:hover {
+  color: #CBC8C9;
 }
 
 .banner {
@@ -255,6 +262,9 @@ body {
   line-height: 25px;
   text-decoration: none;
 }
+.footer__navigation-link:hover {
+  color: #CBC8C9;
+}
 .footer__navigation-list {
   display: flex;
 }
@@ -274,14 +284,53 @@ body {
 .product-path {
   display: flex;
   justify-content: flex-start;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+.product-path__item {
+  margin-right: 5px;
+  border-bottom: 1px solid #1A1918;
+}
+.product-path__item:last-child {
+  border: none;
+}
+.product-path__item-link {
+  color: #1A1918;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-path__item-link:hover {
+  color: #CBC8C9;
 }
 .product__wraper {
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: 100px minmax(auto, 693px) auto;
+  column-gap: 30px;
+}
+.product-mini__list {
+  display: flex;
+  flex-direction: column;
+}
+.product-mini__item {
+  margin-bottom: 15px;
+}
+.product-mini__image:hover {
+  border: 1px solid #1A1918;
+}
+.product-card__wraper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .product-card__icon {
   width: 20px;
   height: 20px;
+  position: absolute;
+  right: 0;
 }
 .product-card__sale {
   width: 120px;
@@ -292,14 +341,101 @@ body {
   font-size: 15px;
   line-height: 18px;
   text-decoration: none;
-  left: 15px;
+  position: absolute;
+  left: 0px;
   padding: 0px 10px;
   text-align: center;
   text-transform: uppercase;
 }
+.product-card__name {
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-family: "font_from_google", sans-serif;
+  font-size: 20px;
+  color: #1A1918;
+}
+.product-card__number {
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-family: "font_from_google", sans-serif;
+  font-size: 13px;
+  color: #1A1918;
+}
+.product-card__price {
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-family: "font_from_google", sans-serif;
+  font-size: 13px;
+  color: #1A1918;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #1A1918;
+}
+.product-card__old-price {
+  color: red;
+  text-decoration: line-through;
+}
+.product-card__colors {
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-family: "font_from_google", sans-serif;
+  font-size: 16px;
+  color: #1A1918;
+}
 .product-card-mini__list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+.product-card-mini__image:hover {
+  border: 1px solid #1A1918;
+}
+.product-card-informatiom__link {
+  padding: 15px 0;
+  border-top: 1px solid #1A1918;
+  border-bottom: 1px solid #1A1918;
+  text-transform: uppercase;
+  font-family: "font_from_google", sans-serif;
+  font-size: 15px;
+  color: #1A1918;
+}
+.product-card-informatiom__link:hover {
+  color: #CBC8C9;
+}
+
+.grid {
+  position: relative;
+  scroll-behavior: smooth;
+}
+.grid__wraper {
+  margin: 120px 0 70px 0;
+}
+.grid__button {
+  margin-top: 20px;
+  padding: 15px 0;
+  border: 1px solid #1A1918;
+  text-transform: uppercase;
+  font-family: "font_from_google", sans-serif;
+  font-size: 15px;
+  color: #1A1918;
+  text-decoration: none;
+  text-align: center;
+}
+.grid__button:hover {
+  background-color: #CBC8C9;
+}
+.grid__image {
+  width: 100%;
+}
+.grid__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: "font_from_google", sans-serif;
+  font-size: 30px;
+  color: #1A1918;
 }
 
 @media (max-width: 769px) {
@@ -368,6 +504,44 @@ body {
 
   .footer__navigation-item {
     margin-right: 15px;
+  }
+
+  .product-path {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .product-path__item-link {
+    font-size: 12px;
+  }
+
+  .product__wraper {
+    grid-template-columns: auto-fill, 75px minmax(auto, 693px) auto;
+    column-gap: 10px;
+  }
+
+  .product-card__wraper {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-items: flex-end;
+  }
+
+  .product-card__price {
+    width: 100%;
+    text-align: end;
+  }
+
+  .product-card-informatiom__link {
+    width: 100%;
+    text-align: end;
+  }
+
+  .product-mini__item {
+    margin-bottom: 5px;
+  }
+
+  .grid__wraper {
+    margin: 30px 0 20px 0;
   }
 }
 

@@ -71,6 +71,9 @@
                 line-height: $line_height_header;
                 text-transform: uppercase;
                 text-decoration: none;
+                &:hover{
+                    color: $color_links;
+                }
             }
         }
     }

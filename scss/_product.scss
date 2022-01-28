@@ -4,16 +4,58 @@
     &-path{
         display: flex;
         justify-content: flex-start;
+        padding: 20px 0;
+        flex-wrap: wrap;
+        &__item{
+            margin-right: 5px;
+            border-bottom: 1px solid $color_main;
+            &:last-child{
+                border: none;
+            }
+            &-link{
+            color: $color_main;
+            font-family: $font_main;
+            font-weight: $font_weight_main;
+            font-size: $font_size_main;
+            line-height: $line_height_main;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover{
+                color: $color_links;
+            }
+            }
+    }
     }
     &__wraper{
         display: grid;
-        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-columns: 100px minmax(auto, 693px) auto;   
+        column-gap: 30px;
     }
+    &-mini{
+        &__list{
+            display: flex;
+            flex-direction: column;
+        }
+        &__item{
+            margin-bottom: 15px;
+        }
+        &__image{
+            &:hover{
+                border: 1px solid $color_main;
+            }
+        }
+    } 
     &-card{
+        &__wraper{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
         &__icon{
             width: 20px;
             height: 20px;
-            // position: absolute; 
+            position: absolute; 
+            right: 0;
         }
         &__sale{
             width: 120px;
@@ -24,17 +66,106 @@
             font-size: $font_size_main;
             line-height: $line_height_main;
             text-decoration: none;
-            // position: absolute;
-            left: 15px;
+            position: absolute;
+            left: 0px;
             padding: 0px 10px;
             text-align: center;
             text-transform: uppercase;
+        }
+        &__name{
+            margin-top: 45px;  
+            text-transform: uppercase; 
+            font-family: $font_second-page; 
+            font-size: 20px;
+            color: $color_main;
+        }
+        &__number{
+            margin-top: 15px;
+            text-transform: uppercase; 
+            font-family: $font_second-page; 
+            font-size: 13px;
+            color: $color_main;
+        }
+        &__price{
+            margin-top: 15px;
+            text-transform: uppercase; 
+            font-family: $font_second-page; 
+            font-size: 13px;
+            color: $color_main;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $color_main;
+        }
+        &__old-price{
+            color: red;
+            text-decoration: line-through;
+        }
+        &__colors{
+            padding-top: 15px;
+            text-transform: uppercase; 
+            font-family: $font_second-page; 
+            font-size: 16px;
+            color: $color_main;
         }
         &-mini{
             &__list{
                 display: flex;
                 flex-wrap: wrap;
+                margin-top: 10px;
+                padding-bottom: 15px;
+                
             }
+            &__image{
+                &:hover{
+                    border: 1px solid $color_main;
+                }
+            }
+        }  
+        &-informatiom__link {
+            padding: 15px 0;
+            border-top: 1px solid $color_main;
+            border-bottom: 1px solid $color_main;
+            text-transform: uppercase; 
+            font-family: $font_second-page; 
+            font-size: 15px;
+            color: $color_main;
+            &:hover{
+                color: $color_links;
+            }
+        } 
+    }
+}
+.grid{
+    position: relative;
+    scroll-behavior: smooth;
+    &__wraper{
+    margin: 120px 0 70px 0;
+    }
+    &__button{
+        margin-top: 20px;
+        padding: 15px 0;
+        border: 1px solid $color_main;
+        text-transform: uppercase; 
+        font-family: $font_second-page; 
+        font-size: 15px;
+        color: $color_main;
+        text-decoration: none;
+        text-align: center;
+    
+        &:hover{
+            background-color: $color_links;
         }
+    }
+    &__image{
+        width: 100%;
+    }
+    &__text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        text-transform: uppercase; 
+        font-family: $font_second-page; 
+        font-size: 30px;
+        color: $color_main;
     }
 }

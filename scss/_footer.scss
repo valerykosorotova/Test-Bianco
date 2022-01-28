@@ -10,6 +10,9 @@
             font-size: $font_size_footer;
             line-height: $line_height_footer;
             text-decoration: none;
+            &:hover{
+                color: $color_links;
+            }
         }
         &-list{
          display: flex;
