@@ -2,8 +2,9 @@
 
 
 .main{
-    margin-top: 40px;
-    
+    &-category{
+        margin-top: 40px;    
+    }
     &-content{
         padding-bottom: 200px;
         &__quantity{

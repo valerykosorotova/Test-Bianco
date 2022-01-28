@@ -1,0 +1,40 @@
+@import "_variables";
+
+.product{
+    &-path{
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__wraper{
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+    }
+    &-card{
+        &__icon{
+            width: 20px;
+            height: 20px;
+            // position: absolute; 
+        }
+        &__sale{
+            width: 120px;
+            background-color: $color_borders;
+            color: $color_main;
+            font-family: $font_main;
+            font-weight: $font_weight_main;
+            font-size: $font_size_main;
+            line-height: $line_height_main;
+            text-decoration: none;
+            // position: absolute;
+            left: 15px;
+            padding: 0px 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &-mini{
+            &__list{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
